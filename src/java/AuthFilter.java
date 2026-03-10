@@ -1,3 +1,4 @@
+
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -23,7 +24,7 @@ public class AuthFilter implements Filter {
         String path = req.getRequestURI();
 
         // Allow login page and login servlet
-        if (path.endsWith("index.html") || path.endsWith("login_user_servlet")) {
+        if (path.endsWith("index.html") || path.endsWith("login_user_servlet") || path.endsWith("sign_up.jsp") || path.endsWith("loginServlet")) {
             chain.doFilter(request, response);
             return;
         }
@@ -35,5 +36,6 @@ public class AuthFilter implements Filter {
         } else {
             res.sendRedirect("index.html");
         }
+
     }
 }

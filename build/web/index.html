@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
+<!--<!DOCTYPE html>
+
+
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -13,7 +12,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </head>
     <body>
         <div>TODO write content</div>
-        <h1 class="bg-danger">Login connector</h1>
+        <h1 class="bg-danger">Create an account !!!</h1>
         <form action="login_user_servlet" class="container-fluid card" style="width:40rem;">
             Enter user Name : 
             <input type="text" placeholder="user name" name="uname">
@@ -21,5 +20,84 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <input type="password" placeholder="password" name="password">
             <input type="submit" value="submit" name="submit">
         </form>
+        <br><br>
+        <a href="sign_up.jsp">sign_up</a>
     </body>
+</html>
+
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FindLost Portal</title>
+        <meta charset="UTF-8">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body{
+                background:#f5f7fa;
+            }
+
+            .card-box{
+                margin-top:120px;
+            }
+        </style>
+
+    </head>
+
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+
+                <div class="card shadow card-box">
+
+                    <div class="card-header bg-danger text-white text-center">
+                        <h3>Create an Account</h3>
+                    </div>
+
+                    <div class="card-body">
+
+                        <form action="login_user_servlet" >
+
+                            <div class="mb-3">
+                                <label>User Name</label>
+                                <input type="text" name="uname" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Password</label>
+                                <input type="password" name="password" class="form-control" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label>E-mail</label>
+                                <input type="E-mail" name="E-mail" class="form-control" required>
+                            </div>
+
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-success">Create Account</button>
+                            </div>
+
+                        </form>
+
+                        <div class="text-center">
+                            <a href="sign_up.jsp" class="btn btn-primary">Sign Up</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 </html>

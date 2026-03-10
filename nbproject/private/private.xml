@@ -9,6 +9,12 @@
             <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/src/java/login_user_servlet.java</file>
             <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/src/java/AuthFilter.java</file>
             <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/web/welcome.jsp</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/src/java/loginServlet.java</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/web/add.jsp</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/web/find.jsp</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/src/java/addServlet.java</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/src/java/findServlet.java</file>
+            <file>file:/C:/Program%20Files/Apache%20Software%20Foundation/Tomcat%2010.1/user_login/web/header.jsp</file>
         </group>
     </open-files>
 </project-private>

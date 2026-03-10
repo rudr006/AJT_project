@@ -11,7 +11,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.sql.*;
 
-
 /**
  *
  * @author RUDRA PATEL
@@ -37,30 +36,27 @@ public class show_data_servlet extends HttpServlet {
         try {
             /* TODO output your page here. You may use following sample code. */
             Class.forName("com.mysql.cj.jdbc.Driver");
-           con = DriverManager.getConnection("jdbc:mysql://localhost/user","root","user123123");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/user", "root", "user123123");
             stmt = con.createStatement();
-           PreparedStatement ps = con.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
             out.println("<table>");
             out.println("<tr>");
             out.println("<th>uname</th>");
             out.println("<th>upassword</th>");
             out.println("</tr>");
-        
-        while(rs.next())
-        {
-            out.println("<tr>");
-            out.println("<td>"+rs.getString("uname")+"</td>");
-            out.println("<td>"+rs.getString("upassword")+"</td>");
-            out.println("</tr>");
-            
-        }
-        out.println("</table>");
-      }
-        catch(Exception e){}
-}
 
-    
+            while (rs.next()) {
+                out.println("<tr>");
+                out.println("<td>" + rs.getString("uname") + "</td>");
+                out.println("<td>" + rs.getString("upassword") + "</td>");
+                out.println("</tr>");
+
+            }
+            out.println("</table>");
+        } catch (Exception e) {
+        }
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -71,12 +67,9 @@ public class show_data_servlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
     /**
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
-   
-
 }
